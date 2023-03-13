@@ -17,4 +17,36 @@ public class MoneyManager {
   public MoneyManager(String databaseName) {
     this.databaseName = databaseName;
   }
+
+  public void transactionAdd() {
+
+  }
+
+  public void transactionRemove(){
+
+  }
+
+  public void groupAccountAdd() {
+
+  }
+
+  public void groupAccountRemove() {
+
+  }
+
+  public void incomeCategoriesAdd() {
+
+  }
+
+  public void incomeCategoriesRemove() {
+
+  }
+
+  public void expenseCategoriesAdd() {
+
+  }
+
+  public void expenseCategoriesRemove() {
+    
+  }
 }
