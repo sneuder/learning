@@ -1,5 +1,7 @@
 package database;
 
+import java.util.ArrayList;
+
 import models.accounts.GroupAccount;
 import models.categories.expenses.ExpenseCategory;
 import models.categories.incomes.IncomeCategory;
@@ -9,10 +11,10 @@ public class MoneyManager {
   String id;
   String databaseName;
 
-  Transaction[] transactions;
-  GroupAccount[] groupAccounts;
-  IncomeCategory[] incomeCategories;
-  ExpenseCategory[] expenseCategories;
+  ArrayList<Transaction> transactions;
+  ArrayList<GroupAccount> groupAccounts;
+  ArrayList<IncomeCategory> incomeCategories;
+  ArrayList<ExpenseCategory> expenseCategories;
 
   public MoneyManager(String databaseName) {
     this.databaseName = databaseName;
@@ -26,27 +28,27 @@ public class MoneyManager {
 
   }
 
-  public void groupAccountAdd() {
-
+  public void groupAccountAdd(GroupAccount newGroupAccount) {
+    this.groupAccounts.add(newGroupAccount);
   }
 
   public void groupAccountRemove() {
 
   }
 
-  public void incomeCategoriesAdd() {
+  public void incomeCategoryAdd() {
 
   }
 
-  public void incomeCategoriesRemove() {
+  public void incomeCategoryRemove() {
 
   }
 
-  public void expenseCategoriesAdd() {
+  public void expenseCategoryAdd() {
 
   }
 
-  public void expenseCategoriesRemove() {
+  public void expenseCategoryRemove() {
     
   }
 }
