@@ -1,21 +1,12 @@
 package models.transactions;
 
-import models.accounts.Account;
-
 public class Transaction {
   String id;
-  Account account;
   float amount;
+  Object transaction;
 
-  public void income() {
-
+  public Transaction(Object transaction) {
+    this.transaction = transaction;
   }
 
-  public void expense() {
-
-  }
-
-  public void transfer() {
-    
-  }
 }
