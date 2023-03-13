@@ -6,7 +6,7 @@ public class GroupAccount {
   String id;
   public String name;
   String description;
-  ArrayList<Account> accounts;
+  ArrayList<Account> accounts = new ArrayList<Account>();
 
   public GroupAccount(String name, String description) {
     this.name = name;
@@ -14,7 +14,7 @@ public class GroupAccount {
   }
 
   public void addAccount(Account newAccount) {
-    accounts.add(newAccount);
+    this.accounts.add(newAccount);;
   }
 
   public void removeAccount(String idAccount) {

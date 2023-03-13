@@ -11,10 +11,10 @@ public class MoneyManager {
   String id;
   String databaseName;
 
-  ArrayList<Transaction> transactions;
-  ArrayList<GroupAccount> groupAccounts;
-  ArrayList<IncomeCategory> incomeCategories;
-  ArrayList<ExpenseCategory> expenseCategories;
+  ArrayList<Transaction> transactions = new ArrayList<Transaction>();
+  ArrayList<GroupAccount> groupAccounts = new ArrayList<GroupAccount>();
+  ArrayList<IncomeCategory> incomeCategories = new ArrayList<IncomeCategory>();
+  ArrayList<ExpenseCategory> expenseCategories = new ArrayList<ExpenseCategory>();
 
   public MoneyManager(String databaseName) {
     this.databaseName = databaseName;
