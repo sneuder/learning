@@ -36,16 +36,16 @@ public class MoneyManager {
 
   }
 
-  public void incomeCategoryAdd() {
-
+  public void incomeCategoryAdd(IncomeCategory newIncomeCategory) {
+    this.incomeCategories.add(newIncomeCategory);
   }
 
   public void incomeCategoryRemove() {
 
   }
 
-  public void expenseCategoryAdd() {
-
+  public void expenseCategoryAdd(ExpenseCategory newExpenseCategory) {
+    this.expenseCategories.add(newExpenseCategory);
   }
 
   public void expenseCategoryRemove() {

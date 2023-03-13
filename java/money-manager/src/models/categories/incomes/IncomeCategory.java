@@ -1,11 +1,17 @@
 package models.categories.incomes;
 
+import java.util.ArrayList;
+
 public class IncomeCategory {
   String id;
-  String name;
-  IncomeSubcategory[] subcategories;
+  public String name;
+  ArrayList<IncomeSubcategory> subcategories;
 
   public IncomeCategory(String name){
     this.name = name;
+  }
+
+  public void addSubcategory(IncomeSubcategory newSubcategory) {
+    subcategories.add(newSubcategory);
   }
 }
