@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class ExpenseCategory {
   String id;
   public String name;
-  ArrayList<ExpenseSubcategory> subCategories;
+  ArrayList<ExpenseSubcategory> subCategories = new ArrayList<ExpenseSubcategory>();
 
   public ExpenseCategory(String name) {
     this.name = name;

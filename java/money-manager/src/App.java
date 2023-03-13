@@ -9,6 +9,5 @@ public class App {
   public static void main(String[] args) {
     ShowUpService.showMenu();
     SetUp.setDefaults(database);
-    System.out.println(database);
   }
 }
